@@ -10,7 +10,7 @@ let ditherURL = "./assets/dither.png";
  *  Gets WebGL context and compiles shader programs.
  *
  */
-export function initWebGL(){
+export function initWebGL(canvas){
     /* Add default pointer */
     let pointers = [];
     pointers.push( new Pointer() );

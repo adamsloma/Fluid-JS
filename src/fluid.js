@@ -15,7 +15,7 @@ module.exports = class Fluid {
         canvas.height = canvas.clientHeight;
         this.canvas = canvas;
 
-        const {programs, webGL, colorFormats, pointers} = initWebGL();
+        const {programs, webGL, colorFormats, pointers} = initWebGL(this.canvas);
         this.programs = programs;
         this.webGL = webGL;
         this.colorFormats = colorFormats;
